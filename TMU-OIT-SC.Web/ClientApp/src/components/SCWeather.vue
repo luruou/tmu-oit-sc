@@ -150,6 +150,7 @@ export default {
     this.weatherAPIUrl = weather.apiUrl;
     this.weatherElements = await this.fetchWeatherElements(this.weatherAPIUrl);
     this.setWeatherElement();
+      this.getWeatherImage();
     this.setWeatherInterval();
 
     //CO2
@@ -215,6 +216,7 @@ export default {
           base.weatherAPIUrl
         );
         await base.setWeatherElement();
+        await base.getWeatherImage();
       }, 60 * 1000);
     },
     async setWeatherElement() {
@@ -228,7 +230,9 @@ export default {
             );
             if (base.weather.wx == null) base.weather.wx = item.time[0];
             base.weather.wxText = base.weather.wx.elementValue[0].value;
-            this.weather.wxCode = base.weather.wx.elementValue[1].value;
+            base.weather.wxCode = base.weather.wx.elementValue[1].value;
+
+
             break;
           case "T":
             base.weather.t = item.time.find(
@@ -253,6 +257,13 @@ export default {
           default:
         }
       });
+    },
+    async getWeatherImage()
+    {
+      let base = this;
+      const response = await fetch(process.env.VUE_APP_CONFIG_API + "/weather/" + base.weather.wxCode);
+      const res = await response.json();
+      this.weather.imgSrc = res.value;
     },
     async postCO2Sensors(url, body) {
       const response = await this.axios.post(url, body);

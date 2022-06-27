@@ -26,7 +26,7 @@ namespace TMU_OIT_SC.Service.Services
 
         public async Task<RefConfig> GetWeatherValueAsync(string key)
         {
-            return await _db.TMUSC().QueryFirstAsync<RefConfig>("SELECT [ConfigType],[Key],[Value] FROM [TMUSC].[dbo].[RefConfig] WHERE ConfigType = 'Weather' AND Key = @key", new { Key = key });
+            return await _db.TMUSC().QueryFirstAsync<RefConfig>(@"SELECT [ConfigType],[Key],[Value] FROM [TMUSC].[dbo].[RefConfig] WHERE ConfigType = 'Weather' AND [Key] = @key", new { Key = key });
         }
     }
 }
