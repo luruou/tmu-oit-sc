@@ -1,0 +1,475 @@
+<template>
+  <!-- <SCList /> -->
+  
+  <SCHeader/>
+   <section class="board py-3 bg-primary bg-opacity-35">
+      <div class="container-fluid">
+        <div
+          class="row row-cols-2 justify-content-around align-items-center py-4"
+        >
+          <div class="col-lg-5 py-3 mx-auto">
+            <!-- <h3 class="text-grey">教室</h3> -->
+            <h1 class="fw-bolder room-title">8004智慧群組教室</h1>
+          </div>
+          <div class="col-lg-5 py-3 bg-white rounded-15 mx-auto rounded">
+            <div class="row row-cols-2 px-3">
+              <div class="col px-4 d-flex flex-column">
+                <span class="text-dark"
+                  >教室溫度<i class="bi bi-thermometer"></i
+                ></span>
+                <h1 class="text-primary room-title py-0">23°C</h1>
+                <span class="text-dark"
+                  >教室濕度<i class="bi bi-droplet-fill"></i
+                ></span>
+                <h1 class="text-primary room-title">88%</h1>
+              </div>
+              <div class="col d-flex flex-column text-dark">
+                <span>台北市信義區</span>
+                <p class="text-dark">
+                  <i class="bi bi-thermometer"></i>
+                  23°C
+                  <i class="bi bi-droplet-fill"></i>
+                  88%
+                </p>
+                <span>多雲</span>
+                <img
+                  src="../assets/icons/sun.gif"
+                  class="mx-auto d-block"
+                  width="130px"
+                />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  <main>
+   
+
+    <div class="py-5">
+      <div class="container">
+        <div class="row row-cols-1 g-3">
+  
+          <div class="col p-0 card border border-primary border-4 rounded-15 shadow-sm">
+            <!-- <div class="border-0 h3 py-0"> -->
+            <div class="d-flex flex-row justify-content-between text-center">
+              <div class="col h1 py-3 my-0 fw-bold bg-secondary bg-opacity-50 rounded-top-left-15">
+                10:10-11:00
+              </div>
+              <div
+                class="col h1 py-3 my-0 fw-bold rounded-top-right-15"
+                style="background-color: #ffd900"
+              >
+                上課中
+              </div>
+            </div>
+            <!-- </div> -->
+            <div class="card-body px-4">
+              <div class="row row-cols-1">
+                <div class="col mb-4">
+                  <div class="card-text h4 my-3">課號 00000836</div>
+                  <h1 class="card-title">
+                    <strong class="mb-2 course-name"
+                      >看不見的手？新世紀的貨幣難題看不見的手？新世紀的貨幣難題看不見的手？新世紀的貨幣難題</strong
+                    >
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-row py-2 align-items-center">
+              <div class="p-2 pe-0 ps-4">
+                <!-- 男師圖：user-m.png；女師圖：user-f.png -->
+                <img
+                  src="../assets/user-f.png"
+                  class="avatar-img rounded mx-auto d-block"
+                />                 
+              </div>
+              <div class="p-2 px-4 me-auto">
+                <div class="card-text mb-1">任課教師</div>
+                <h3 class="fw-bolder">王大明</h3>
+              </div>
+
+              <!-- 簽到按鈕Group  -->
+              <div class="p-2 px-4 d-flex flex-row">
+                <a
+                  href="#"
+                  class="sign-button btn border border-3 btn-lg disabled"
+                  >已簽到 38</a
+                >
+                <a href="#" class="sign-button btn btn-primary btn-lg ms-1"
+                  >簽到</a
+                >
+              </div>
+               <!-- 簽到按鈕Group 結束  -->
+            </div>
+
+            <div class="card-footer border-top rounded-bottom-15 text-muted small px-4 py-3">
+              <p class="card-text mb-auto">
+                <i class="bi bi-info-circle"></i>很多的話想說只能在這裡說
+              </p>
+              <p class="card-text mb-auto">
+                <i class="bi bi-info-circle"></i>很多的話想說只能在這裡說
+              </p>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <svg
+                            class="bd-placeholder-img card-img-top"
+                            width="100%"
+                            height="225"
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice"
+                            focusable="false"
+                          >
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c" />
+                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                          </svg>
+
+                          <div class="card-body">
+                            <p class="card-text">
+                              card-text
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                <button
+                                  type="button"
+                                  class="btn btn-sm btn-outline-secondary"
+                                >
+                                  View
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-sm btn-outline-secondary"
+                                >
+                                  Edit
+                                </button>
+                              </div>
+                              <small class="text-muted">9 mins</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <svg
+                            class="bd-placeholder-img card-img-top"
+                            width="100%"
+                            height="225"
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice"
+                            focusable="false"
+                          >
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c" />
+                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                          </svg>
+
+                          <div class="card-body">
+                            <p class="card-text">
+                              card-text
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                <button
+                                  type="button"
+                                  class="btn btn-sm btn-outline-secondary"
+                                >
+                                  View
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-sm btn-outline-secondary"
+                                >
+                                  Edit
+                                </button>
+                              </div>
+                              <small class="text-muted">9 mins</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <svg
+                            class="bd-placeholder-img card-img-top"
+                            width="100%"
+                            height="225"
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice"
+                            focusable="false"
+                          >
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c" />
+                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                          </svg>
+
+                          <div class="card-body">
+                            <p class="card-text">
+                              card-text
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                <button
+                                  type="button"
+                                  class="btn btn-sm btn-outline-secondary"
+                                >
+                                  View
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-sm btn-outline-secondary"
+                                >
+                                  Edit
+                                </button>
+                              </div>
+                              <small class="text-muted">9 mins</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+      </div>
+    </div>
+
+    <section class="py-3">
+      <div class="container">
+        <div class="row row-cols-1 g-3">
+          <div class="col p-0">
+            <div
+              class="
+                d-flex
+                flex-row
+                border border-4 border-primary
+                rounded-10
+                shadow-sm
+                mb-4
+                bg-white
+              "
+            >
+              <div class="py-4 px-4 bg-opacity-50" style="width: 220px">
+                12:00-13:00
+              </div>
+              <div class="py-4 px-4 me-auto">
+                <span
+                  class="d-inline-block text-truncate course-name"
+                  style="max-width: 500px"
+                  >這門課程的名字很長很長很長很長很長很長就像長江尼羅河</span
+                >
+                <span
+                  class="d-inline-block text-truncate"
+                  style="max-width: 500px"
+                  >DAHL CHRISTOPH DAVID</span
+                >
+              </div>
+              <div class="py-4 px-4 align-self-center">
+                <a href="#" class="sign-button btn btn-primary btn-lg mb-1"
+                  >簽到</a
+                >
+  
+              </div>
+            </div>
+            <div
+              class="
+                d-flex
+                flex-row
+                border border-4 border-danger
+                rounded-10
+                shadow-sm
+                mb-4
+                bg-white
+              "
+            >
+              <div class="py-4 px-4 bg-opacity-50" style="width: 220px">
+                12:00-13:00
+              </div>
+              <div class="py-4 px-4 me-auto">
+                <span
+                  class="d-inline-block text-truncate course-name"
+                  style="max-width: 500px"
+                  >這門課程的名字很長很長很長很長很長很長就像長江尼羅河</span
+                >
+                <span
+                  class="d-inline-block text-truncate"
+                  style="max-width: 500px"
+                  >DAHL CHRISTOPH DAVID</span
+                >
+              </div>
+              <div class="py-4 px-4 align-self-center">
+                <a
+                  href="#"
+                  class="sign-button btn btn-danger btn-lg mb-1 disabled"
+                  >停課</a
+                >
+    
+              </div>
+            </div>
+            <div
+              class="
+                d-flex
+                flex-row
+                border border-4 border-secondary
+                rounded-10
+                shadow-sm
+                mb-4
+                bg-white
+              "
+            >
+              <div class="py-4 px-4 bg-opacity-50" style="width: 220px">
+                12:00-13:00
+              </div>
+              <div class="py-4 px-4 me-auto">
+                <span
+                  class="d-inline-block text-truncate course-name"
+                  style="max-width: 500px"
+                  >這門課程的名字很長很長很長很長很長很長就像長江尼羅河</span
+                >
+                <span
+                  class="d-inline-block text-truncate"
+                  style="max-width: 500px"
+                  >DAHL CHRISTOPH DAVID</span
+                >
+              </div>
+              <div class="py-4 px-4 align-self-center">
+                <a
+                  href="#"
+                  class="sign-button btn btn-secondary text-opacity-25 btn-lg mb-1 disabled"
+                  >即將開始</a
+                >
+
+              </div>
+            </div>
+
+
+            <div class="card border border-0 shadow">
+
+                    <div class="row row-cols-1">
+                        <div class="
+                        col
+                        d-flex
+                        flex-row
+                        justify-content-between
+                        align-items-stretch
+                      ">
+                            <div class="col-2 border">照片</div>
+                            <div class="col-7 border">
+                                <div class="card-text mb-1">任課教師</div>
+                                <h3>王大明</h3>
+                            </div>
+                            <div class="col-3 border align-self-center d-flex flex-column">
+                                <a href="#" class="sign-button btn btn-primary mb-1">簽到</a>
+                                <a class="sign-button btn border">已簽到 38</a>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="card-text h4 mb-2 mt-2">課號 00000836</div>
+                            <h1 class="card-title">
+                                <strong class="mb-2 course-name">看不見的手？新世紀的貨幣難題看不見的手？新世紀的貨幣難題看不見的手？新世紀的貨幣難題</strong>
+                            </h1>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+<SCFooter/>
+
+</template>
+
+
+<style scoped>
+.container {
+  max-width: 960px;
+}
+
+/*簽到按鈕*/
+.sign-button {
+  width: 180px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+/*
+    * Dummy devices (replace them with your own or something else entirely!)
+    */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+/*
+    * Extra utilities
+    */
+
+.flex-equal > * {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+</style>
+
+
+<script>
+
+// @ is an alias to /src
+//import SCList from "@/components/SCList.vue";
+import SCHeader from "@/components/SCHeader.vue";
+import SCFooter from "@/components/SCFooter.vue";
+
+export default {
+  name: "HomeView",
+  components: {
+    //SCList,
+    SCHeader,
+    SCFooter,
+  },
+  created(){
+
+    console.log(process.env.VUE_APP_SC_API);
+  }
+};
+</script>

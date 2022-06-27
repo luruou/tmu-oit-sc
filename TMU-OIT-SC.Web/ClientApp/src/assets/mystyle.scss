@@ -1,0 +1,58 @@
+.board {
+  /* background: rgb(0,101,108); */
+  /* 漸層 */
+  //  background: linear-gradient(339deg, rgb(0, 87, 108) 0%, rgb(106, 255, 250) 100%); 
+  /* 圖片 */
+  //  background-image: url("assets/clouds.jpg");
+  //   background-repeat: no-repeat;
+  //   background-size:cover;
+  //   background-position:0px -50px; 
+
+}
+
+.my-avatar-circle {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #dee2e6 !important;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #4b566b;
+  text-align: center;
+  overflow: hidden;
+}
+
+.avatar-img {
+  width: 60px;
+  // height: 60px;
+  // clip-path: circle(50%);    
+  // background-image: url("assets/avatar.png");
+  // background-position: -20px -20px;
+  // background-repeat: no-repeat;
+}
+
+.convenient {}
+
+.room-title {
+  font-size: 4.3rem;
+}
+
+#tmu-env-content {
+  font-weight: bold;
+
+  .tmu-env-data {
+    font-size: 3.8rem;
+  }
+
+}
+
+// 課程名稱
+.course-name {
+  color: #1f69b2;
+  // color: #3A2A6E;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
